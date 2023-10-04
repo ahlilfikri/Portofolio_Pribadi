@@ -1,4 +1,5 @@
 import {useState,useEffect} from 'react';
+import { Link } from 'react-scroll';
 import './NavBar.css';
 
 const NavBar = () => {
@@ -36,10 +37,18 @@ const NavBar = () => {
                 }
                 {isopen && (
                     <ul className="nav-links">
-                        <li><a href="#">About-me</a></li>
-                        <li><a href="#">Video</a></li>
-                        <li><a href="#">Experience</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li>
+                          <Link className="nav-link" to="aboutMe" smooth={true} duration={500}>About-Me</Link>
+                        </li>
+                        <li>
+                          <Link className="nav-link" to="video" smooth={true} duration={500}>Video</Link>
+                        </li>
+                        <li>
+                          <Link className="nav-link" to="experience" smooth={true} duration={500}>Experience</Link>
+                        </li>
+                        <li>
+                          <Link className="nav-link" to="contact" smooth={true} duration={500}>Contact</Link>
+                        </li>
                     </ul>
                     )
                 }

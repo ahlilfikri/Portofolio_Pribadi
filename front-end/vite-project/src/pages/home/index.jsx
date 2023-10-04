@@ -12,16 +12,16 @@ const Home = () => {
         <Fragment >
             <div className="home-wrapper">
                 <NavBar />
-                <section id='introduction-session'>
+                <section id='introduction'>
                     <Introduction/>
                 </section>
-                <section id='aboutme-section'>
+                <section id='aboutMe'>
                     <AboutMe /> 
                 </section>
-                <section>
+                <section id='experience'>
                     <Experience />
                 </section>
-                <section>
+                <section id='contact'>
                     <Contact />
                 </section>
                 <Footer />

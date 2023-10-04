@@ -20,10 +20,6 @@
     color : #adb4bf;
 }
 
-/* .navbar .menu-drop-down button {
-    border : none !important;
-    background-color : red !important;
-} */
 
 .navbar h2{
     padding: 0 0 0 10px;
@@ -40,18 +36,19 @@
 .nav-links li {
     margin-right: 20px;
     font-size: 20px;
-    font-weight: 200;
+    font-weight: 500;
 }
 
-.nav-links a {
+.nav-links Link {
     color: #454A52;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
-.nav-links a:hover {
-    color: #454A52;
+.nav-links li:hover {
+    cursor: pointer;
+    color: #444444;
 }
 
 @media (max-width: 360px) {
