@@ -3,7 +3,8 @@
     height : fit-content;
     display : flex;
     padding : 0 0 0px 0;
-    overflow: visible;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .contact-container .content-right {
@@ -123,9 +124,21 @@
     }
 }
 
+@media (max-width: 960px) and (max-height: 600px) {
+    .contact-container {
+        height: 1250px !important;
+    }
+}
+@media (max-width: 540px) and (max-height: 400px) {
+    .contact-container {
+        height: 1050px !important;
+    }
+}
+
 @media (max-width: 960px) {
     .contact-container {
-        height: 210vh ;
+        height: 1550px ;
+        /* background-color: red; */
     }
     .contact-container .content-left{
         width : 50vw;
@@ -185,6 +198,8 @@
 @media (max-width: 680px) {
     .contact-container{
         height: 220vh;
+        padding-bottom: 0 !important;
+        margin-bottom:0 !important ;
     }
 
 }
